@@ -1,0 +1,16 @@
+{
+    "name": "Seed.Audio",
+    "rootNamespace": "Seed.Audio",
+    "references": [
+        "Seed.Camera"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
