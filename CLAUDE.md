@@ -63,7 +63,7 @@
 | 인터페이스 | `I` 접두사 + PascalCase | `IInteractable`, `IPoolable` |
 
 ### 추가 규칙
-- `#region` 사용 금지 — 파일을 작게 유지하는 방향으로 구조화
+- `#region`은 가독성에 도움이 될 때 한해 사용 — 단, 파일을 작게 유지하는 것이 우선
 - `Awake`: 레퍼런스 초기화 / `Start`: 로직 초기화 용도 분리
 - `Update`에서 직접 물리 연산 금지 → `FixedUpdate` 또는 코루틴 사용
 - null 체크는 `is null` / `is not null` 사용 (`== null` 지양)
