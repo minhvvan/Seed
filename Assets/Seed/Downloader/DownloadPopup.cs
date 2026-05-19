@@ -32,6 +32,9 @@ namespace Seed.Downloader
         [SerializeField] private TMP_Text txtDesc;
         [SerializeField] private TMP_Text downloadingBarStatus;
         [SerializeField] private Slider downloadProgressBar;
+        [SerializeField] private Button startDownloadButton;
+        [SerializeField] private Button cancelButton;
+        [SerializeField] private Button enterGameButton;
         [SerializeField] private DownloadController downloader;
 
         private DownloadProgressStatus _progressInfo;
@@ -40,6 +43,13 @@ namespace Seed.Downloader
         private long _totalSizeInUnit;
 
         public State CurrentState { get; private set; } = State.None;
+
+        private void Awake()
+        {
+            startDownloadButton.onClick.AddListener(OnClickStartDownload);
+            cancelButton.onClick.AddListener(OnClickCancelBtn);
+            enterGameButton.onClick.AddListener(OnClickEnterGame);
+        }
 
         private IEnumerator Start()
         {
@@ -55,14 +65,14 @@ namespace Seed.Downloader
             });
         }
 
-        public void OnClickStartDownload()
+        private void OnClickStartDownload()
         {
             Debug.Log("다운로드를 시작합니다");
             SetState(State.Downloading, true);
             downloader.GoNext();
         }
 
-        public void OnClickCancelBtn()
+        private void OnClickCancelBtn()
         {
 #if UNITY_EDITOR
             if (Application.isEditor)
@@ -72,7 +82,7 @@ namespace Seed.Downloader
 #endif
         }
 
-        public void OnClickEnterGame()
+        private void OnClickEnterGame()
         {
             Debug.Log("Start Game!");
             UnityEngine.SceneManagement.SceneManager.LoadScene(1);

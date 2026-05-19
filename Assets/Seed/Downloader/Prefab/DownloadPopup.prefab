@@ -121,9 +121,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 321019945465730997}
         m_TargetAssemblyTypeName: DownloadPopup, Assembly-CSharp
-        m_MethodName: OnClickEnterGame
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -466,8 +466,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DownloadPopup, Assembly-CSharp
+      - m_Target: {fileID: 718349523008240431}
+        m_TargetAssemblyTypeName: Seed.Downloader.DownloadPopup, Seed.Downloader
         m_MethodName: OnClickCancelBtn
         m_Mode: 1
         m_Arguments:
@@ -629,7 +629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2314285278146966519
 RectTransform:
   m_ObjectHideFlags: 0
@@ -954,7 +954,7 @@ RectTransform:
   m_Father: {fileID: 428342688360246300}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1117,9 +1117,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 9180893894316460184}
         m_TargetAssemblyTypeName: DownloadPopup, Assembly-CSharp
-        m_MethodName: OnClickStartDownload
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1555,7 +1555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5238101463518146193
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1698,8 +1698,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DownloadPopup, Assembly-CSharp
+      - m_Target: {fileID: 718349523008240431}
+        m_TargetAssemblyTypeName: Seed.Downloader.DownloadPopup, Seed.Downloader
         m_MethodName: OnClickEnterGame
         m_Mode: 1
         m_Arguments:
@@ -2175,6 +2175,8 @@ GameObject:
   - component: {fileID: 7271308651738311036}
   - component: {fileID: 5625548403650547431}
   - component: {fileID: 1843622020767439858}
+  - component: {fileID: 5823435431618181750}
+  - component: {fileID: 718349523008240431}
   m_Layer: 5
   m_Name: DownloadPopup
   m_TagString: Untagged
@@ -2265,3 +2267,48 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5823435431618181750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9180893894316460184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db134095d23cbf41b3dd00de9d13c63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labelToDownload: MainAsset
+  downloadURL: http://175.207.177.205/Android
+--- !u!114 &718349523008240431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9180893894316460184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1703644e4ded95a43a557cc56b3cae70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roots:
+  - state: 1
+    root: {fileID: 2314285278146966519}
+  - state: 2
+    root: {fileID: 4760941014390477598}
+  - state: 3
+    root: {fileID: 6939527820745178564}
+  - state: 4
+    root: {fileID: 5238101463518146193}
+  - state: 5
+    root: {fileID: 8812832936103970162}
+  txtTitle: {fileID: 889700964455076174}
+  txtDesc: {fileID: 2264434359884630636}
+  downloadingBarStatus: {fileID: 6296774718448430691}
+  downloadProgressBar: {fileID: 6981127846206614818}
+  startDownloadButton: {fileID: 1100709009984509599}
+  cancelButton: {fileID: 3016247301906816389}
+  enterGameButton: {fileID: 3594068810127491068}
+  downloader: {fileID: 5823435431618181750}

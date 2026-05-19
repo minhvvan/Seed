@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: edf596bb4c618d840b8e968bb3bcff16
   m_currentHash:
     serializedVersion: 2
-    Hash: 60d8b455acb00738fb37a513e070b3b7
+    Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_CatalogRequestsTimeout: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_BundleRetryCount: 0
   m_BundleRedirectLimit: -1
   m_SharedBundleSettings: 0
-  m_SharedBundleSettingsCustomGroupIndex: 0
+  m_SharedBundleSettingsCustomGroupIndex: 1
   m_ContiguousBundles: 1
   m_StripUnityVersionFromBundleBuild: 0
   m_DisableVisibleSubAssetRepresentations: 0
@@ -59,6 +59,7 @@ MonoBehaviour:
   m_BuildAddressablesWithPlayerBuild: 2
   m_overridePlayerVersion: '[UnityEditor.PlayerSettings.bundleVersion]'
   m_GroupAssets:
+  - {fileID: 11400000, guid: 53a884b75ab42fe409d46a70889d340d, type: 2}
   - {fileID: 11400000, guid: 282d8b64733888346931d280dabb3bc5, type: 2}
   m_BuildSettings:
     m_LogResourceManagerExceptions: 1
@@ -88,7 +89,7 @@ MonoBehaviour:
       - m_Id: 4229aedb7aef9754f958a8435d7e7133
         m_Value: 'ServerData/[BuildTarget]'
       - m_Id: 6b2fa5ba1fc14f145b25db51342330d0
-        m_Value: <undefined>
+        m_Value: '{Seed.Downloader.AddressableDownloader.DownloadURL}'
       - m_Id: 72f7160cea3c4e847aabcc128b6237f6
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: a8ade78d75deeb541bf741e3aaa1bcb9
@@ -113,6 +114,7 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
+    - MainAsset
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 65758e0da63867f469d9b9bc6a231413, type: 2}
@@ -125,4 +127,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 63f68b4251317cb4e9a2f52ebd2573ec, type: 2}
   - {fileID: 11400000, guid: 83dc07df9a4a7fd449e4c00d2412d8bd, type: 2}
   - {fileID: 11400000, guid: 63764f3bacf86aa4799df0bbc005aa99, type: 2}
-  m_ActiveProfileId: 1590a58f7c99cf2468ab7c62d86df03f
+  m_ActiveProfileId: e6fd6a322b073d549977b1ec6c4f2708

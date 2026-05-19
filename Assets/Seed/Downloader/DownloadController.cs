@@ -42,7 +42,7 @@ namespace Seed.Downloader
 
         public void GoNext()
         {
-            CurrentDownloadState = CurrentDownloadState switch
+            CurrentDownloadState = LastValidState switch
             {
                 DownloadState.Initialize => DownloadState.UpdateCatalog,
                 DownloadState.UpdateCatalog => DownloadState.DownloadSize,
