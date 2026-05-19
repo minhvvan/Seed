@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "com.seed.korean-font": {
+      "version": "file:com.seed.korean-font",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.ugui": "2.0.0"
+      }
+    },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
     "com.unity.addressables": {
       "version": "2.5.0",
       "depth": 0,

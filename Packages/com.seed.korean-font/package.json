@@ -1,0 +1,13 @@
+{
+  "name": "com.seed.korean-font",
+  "version": "0.1.0",
+  "displayName": "Seed Korean Font",
+  "description": "Pretendard 한글 폰트를 TextMeshPro 기본 폰트로 자동 설정합니다. 패키지를 추가하면 어떤 Unity 프로젝트든 별도 작업 없이 한글이 깨지지 않습니다.",
+  "unity": "6000.0",
+  "dependencies": {
+    "com.unity.ugui": "2.0.0"
+  },
+  "author": {
+    "name": "Seed"
+  }
+}
